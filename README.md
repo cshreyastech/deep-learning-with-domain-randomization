@@ -2,10 +2,10 @@
 
 ## Run validation:
 ```
-cd /home/user/catkin\_ws
+cd /home/user/catkin_ws
 rm -rf build/ devel/
 catkin\_make
 source devel/setup.bash
 rospack profile
-roslaunch my\_dcnn\_training\_pkg start\_fetch\_randomenv\_ex4-3.launch
+roslaunch my_dcnn_training_pkg start_fetch_randomenv_ex4-3.launch
 ```
