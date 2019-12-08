@@ -4,7 +4,7 @@
 
     <arg name="environment_name" default="FetchMoveTCP-v0" />
     <!-- Model file name that has to be in the bk folder-->
-    <arg name="weight_file_name" default="model-unit1_y_10_model-96-1.0-30-5-TIME-1574969147.4958138-1.13754082.h5" />
+    <arg name="weight_file_name" default="model-120K_fetchrange_randomenv-96-1.0-30-32-TIME-1541250696.5790591-0.00145191.h5" />
     <arg name="grasp_activated" default="True" />
     <arg name="number_of_tests" default="10" />
     <arg name="camera_period" default="5.0" />
