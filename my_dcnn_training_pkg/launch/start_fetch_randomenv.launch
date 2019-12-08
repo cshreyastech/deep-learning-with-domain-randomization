@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+
+    <arg name="environment_name" default="FetchMoveTCP-v0" />
+    <!-- Model file name that has to be in the bk folder-->
+    <arg name="weight_file_name" default="model-unit1_y_10_model-96-1.0-30-5-TIME-1574969147.4958138-1.13754082.h5" />
+    <arg name="grasp_activated" default="True" />
+    <arg name="number_of_tests" default="10" />
+    <arg name="camera_period" default="5.0" />
+
+    <arg name="image_size" default="96" />
+    <!-- Recomended Options: 0.35, 0.5, 0.75, 1.0 -->
+    <arg name="ALPHA" default="1.0" />
+
+    <arg name="number_of_elements_to_be_output" default="2" />
+
+    <arg name="go_dustbin" default="True" />
+
+
+
+    <node name="fetch_randomenv_node"
+          pkg="my_dcnn_training_pkg"
+          type="fetch_randomenv.py"
+          args="$(arg environment_name) $(arg weight_file_name) $(arg grasp_activated) $(arg number_of_tests) $(arg camera_period) $(arg image_size) $(arg ALPHA) $(arg number_of_elements_to_be_output) $(arg go_dustbin)"
+          output="screen"/>
+
+
+    <include file="$(find my_dcnn_training_pkg)/launch/rviz_fetch_model_evaluation.launch"/>
+
+</launch>

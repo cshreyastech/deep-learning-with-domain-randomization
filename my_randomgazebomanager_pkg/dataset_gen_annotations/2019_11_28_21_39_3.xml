@@ -1,0 +1,10 @@
+<annotation>
+	<folder>dataset_genannotations</folder>
+	<filename>2019_11_28_21_39_3.png</filename>
+	<source>my_randomgazebomanager_pkg</source>
+	<size>
+		<depth>3</depth>
+	<width>640</width><height>480</height></size>
+	<segmented>0</segmented>
+
+<object><name>demo_spam1</name><pose3d><x_com>0.45875244162173967</x_com><y_com>0.0919273570889202</y_com><z_com>0.6397487758003331</z_com><quat_x>-3.006409650330813e-09</quat_x><quat_y>7.466754043852355e-10</quat_y><quat_z>-1.2573080910430452e-08</quat_z><quat_w>1.0</quat_w></pose3d></object></annotation>
